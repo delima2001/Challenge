@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+  <title>Aplicación de encriptación</title>
+</head>
+<body>
+  <h1>Aplicación de encriptación</h1>
+  <!-- Creamos un formulario con dos campos de texto y dos botones -->
+  <form>
+    <label for="texto-original">Texto original:</label><br>
+    <textarea type="text" id="texto-original"></textarea><br>
+    <label for="texto-encriptado">Texto encriptado:</label><br>
+    <textarea type="text" id="texto-encriptado"></textarea><br>
+    <!-- Creamos un botón para encriptar el texto -->
+    <button type="button" onclick="encriptar()">Encriptar</button>
+    <!-- Creamos un botón para desencriptar el texto -->
+    <button type="button" onclick="desencriptar()">Desencriptar</button>
+    <!-- Creamos un botón para copiar el texto encriptado al portapapeles -->
+    <button type="button" onclick="copiarEncriptado()">Copiar 
+  </form> 
+  <script>
+    // Función que encripta el texto
+    function encriptar() {
+      // Obtenemos el valor del campo de texto original
+      var textoOriginal = document.getElementById("texto-original").value;
+      // Reemplazamos las letras "e", "i", "a", "o" y "u" por su versión encriptada
+      textoOriginal = textoOriginal.replace(/e/g, "enter");
+      textoOriginal = textoOriginal.replace(/i/g, "imes");
+      textoOriginal = textoOriginal.replace(/a/g, "ai");
+      textoOriginal = textoOriginal.replace(/o/g, "ober");
+      textoOriginal = textoOriginal.replace(/u/g, "ufat");
+      // Asignamos el valor encriptado al campo de texto encriptado
+      document.getElementById("texto-encriptado").value = textoOriginal;
+    }
+    // Función que desencripta el texto
+    function desencriptar() {
+      // Obtenemos el valor del campo de texto encriptado
+      var textoEncriptado = document.getElementById("texto-encriptado").value;
+      // Reemplazamos la versión encriptada de las letras "e", "i", "a", "o" y "u" por su versión original
+      textoEncriptado = textoEncriptado.replace(/enter/g, "e");
+      textoEncriptado = textoEncriptado.replace(/imes/g, "i");
+      textoEncriptado = textoEncriptado.replace(/ai/g, "a");
+      textoEncriptado = textoEncriptado.replace(/ober/g, "o");
+      textoEncriptado = textoEncriptado.replace(/ufat/g, "u");
+      // Asignamos el valor desencriptado al campo de texto original
+      document.getElementById("texto-original").value = textoEncriptado;
+    }
+    function copiarEncriptado() {
+      // Seleccionamos el contenido del campo de texto encriptado
+      var textoEncriptado = document.getElementById("texto-encriptado");
+      textoEncriptado.select();
+      // Copiamos el contenido seleccionado al portapapeles
+      document.execCommand("copy");
+      // Mostramos un mensaje de éxito
+      alert("Texto encriptado copiado al portapapeles");
+    }
+  </script>
+
+</body>
+</html>
