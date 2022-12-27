@@ -64,6 +64,7 @@ form {
   }
 
 h1 {
+  font-family: Arial, sans-serif;
   color: #333;
   font-size: 2em;
   margin: 20px 0;
@@ -113,6 +114,7 @@ button {
   font-size: 1em;
   margin: 20px 0;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 form {
   width: 400px;
@@ -169,6 +171,7 @@ button {
 }
 
 h1 {
+font-family: Arial, sans-serif;
   color: #000;
   font-size: 1em;
   margin: 20px 0;
