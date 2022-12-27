@@ -4,7 +4,7 @@
 
 
 button {
-    background-color: #4CAF50;
+    background-color: #0A3871;
     border: none;
     border-radius: 25% 10%;
     color: white;
@@ -16,12 +16,12 @@ button {
     font-size: 16px;
     font-weight: bold;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 10px;
+    margin: 10px;
     }
 
 body{
   
-  background: gray;
+  background: #E5E5E5;
 
 }
 
@@ -30,8 +30,9 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     display: inline-block;
     padding: 10px;
-
-    margin: 10px;
+    height: 100px;
+    width:200px;
+    margin: 5px;
     } 
 
     textarea:focus {
@@ -39,7 +40,7 @@ body{
 }
 
 label {
-  
+  font-family: Arial, sans-serif;
   display: block;
   margin: 10px 0;
   font-size: 1.2em;
@@ -50,7 +51,18 @@ form {
   width: 600px;
   margin: 0 auto;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #eee;
+  border-radius: 25% 10%;
 }
+
+.form-group {
+    display: flex;
+  }
+  .form-control {
+    width: 50%;
+  }
+
 h1 {
   color: #333;
   font-size: 2em;
@@ -63,12 +75,12 @@ h1 {
   
 body{
   
-  background: gray;
+  background: #E5E5E5;
 
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #0A3871;
     border: none;
     border-radius: 25% 10%;
     color: white;
@@ -106,7 +118,17 @@ form {
   width: 400px;
   margin: 0 auto;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #eee;
+  border-radius: 25% 10%;
 }
+
+.form-group {
+    display: flex;
+  }
+  .form-control {
+    width: 50%;
+  }
 
 }
 
@@ -114,11 +136,11 @@ form {
  
 body{
   
-  background: gray;
+  background: #E5E5E5;
 
 }
 button {
-    background-color: #4CAF50;
+    background-color: #0A3871;
     border: none;
     border-radius: 25% 10%;
     color: white;
@@ -157,6 +179,16 @@ form {
   width: 200px;
   margin: 0 auto;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #eee;
+  border-radius: 25% 10%;
 }
+
+.form-group {
+    display: flex;
+  }
+  .form-control {
+    width: 50%;
+  }
 
 }

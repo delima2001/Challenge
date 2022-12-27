@@ -12,18 +12,21 @@
 <body>
   <h1>Aplicación de encriptación</h1>
   <!-- Creamos un formulario con dos campos de texto y dos botones -->
-  <form>
-    <label for="texto-original">Texto original:</label><br>
-    <textarea type="text" id="texto-original"></textarea><br>
-    <label for="texto-encriptado">Texto encriptado:</label><br>
-    <textarea type="text" id="texto-encriptado"></textarea><br>
-    <!-- Creamos un botón para encriptar el texto -->
-    <button type="button" onclick="encriptar()">Encriptar</button>
-    <!-- Creamos un botón para desencriptar el texto -->
-    <button type="button" onclick="desencriptar()">Desencriptar</button>
-    <!-- Creamos un botón para copiar el texto encriptado al portapapeles -->
-    <button type="button" onclick="copiarEncriptado()">Copiar 
-  </form> 
+  <div class="form-group">
+    <form>
+      <label for="texto-original textarea1">Texto original:</label><br>
+      <textarea class="form-control" type="text" id="texto-original"></textarea><br>
+      <label for="texto-encriptado textarea2">Texto encriptado:</label><br>
+      <textarea class="form-control" type="text" id="texto-encriptado"></textarea><br>
+      <!-- Creamos un botón para encriptar el texto -->
+      <button type="button" onclick="encriptar()">Encriptar</button>
+      <!-- Creamos un botón para desencriptar el texto -->
+      <button type="button" onclick="desencriptar()">Desencriptar</button>
+      <!-- Creamos un botón para copiar el texto encriptado al portapapeles -->
+      <button type="button" onclick="copiarEncriptado()">Copiar 
+    </form> 
+   </div>
+    
   <script>
     // Función que encripta el texto
     function encriptar() {
